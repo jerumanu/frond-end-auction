@@ -1,14 +1,21 @@
 // import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import login from './components/login';
 import registration from './components/registration';
 import home from './components/home';
 import detail from './components/detail';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-  
+import store from './store';
+import { Provider } from 'react-redux';
 
-function App() {
-  return (<Router>
+
+class App extends Component {
+  render() {
+  return (
+    <Provider store={store}>
+
+<Router>
     <div className="App">
       
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
@@ -39,8 +46,10 @@ function App() {
           </Switch>
         {/* </div> */}
       {/* </div> */}
-    </div></Router>
+    </div>
+    </Router>
+    </Provider>
   );
 }
-
+}
 export default App;
