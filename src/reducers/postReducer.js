@@ -5,7 +5,8 @@ const initialState = {
   item: {}
 };
 
-export default function(state = initialState, action) {
+ const postReducer = (state = initialState, action) =>{
+    // eslint-disable-next-line
   switch (action.type) {
     case FETCH_POSTS:
       return {
@@ -20,4 +21,5 @@ export default function(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+export default postReducer
