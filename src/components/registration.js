@@ -126,7 +126,7 @@ const Registration = ({signup , isAuthenticated}) => {
                 Continue With Facebook
             </button>
             <p className='mt-3'>
-                Already have an account? <Link to='/login'>Sign In</Link>
+                Already have an account? <Link to='/sign-in'>Sign In</Link>
             </p>
                 </div>
                  </div>
