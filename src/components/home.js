@@ -31,7 +31,7 @@ import { fetchPosts } from '../action/postAction ';
                         guidance from a team of business professionals who concentrate on helping improve cash flow,
                          providing credit solutions,and on managing payroll. go ahead and discover solutions
                           that'll help you business run effectively.</p>
-                          {/* {postItems} */}
+                          {postItems}
                           <div className ="row"> 
                            <div className ="col-1-of-3 card  "  >
                                <div className="card-image">
