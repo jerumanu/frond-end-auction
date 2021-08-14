@@ -88,8 +88,7 @@ const Login = ({ login, isAuthenticated }) => {
             <button className='btn btn-primary mt-3' onClick={continueWithFacebook}>
                 Continue With Facebook
             </button>
-            <p className='mt-3'>
-                Don't have an account? <Link to='/signup'>Sign Up</Link>
+            <p className='mt-3'> Don't have an account? <Link to='/sign-up'>Sign Up</Link>
             </p>
             <p className='mt-3'>
                 Forgot your Password? <Link to='/reset-password'>Reset Password</Link>
